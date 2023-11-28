@@ -1,6 +1,4 @@
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+
 
 public class GenericClass<T extends Comparable<T>> {
     private T elem1;

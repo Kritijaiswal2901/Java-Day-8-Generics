@@ -52,7 +52,12 @@ public class MaximumFinder {
         List<T> valueList = Arrays.asList(values);
         Collections.sort(valueList, Collections.reverseOrder());
         T max = valueList.get(0);
+        printMax(max);
         return max;
+    }
+
+    public static <T> void printMax(T max) {
+        System.out.println("Max value: " + max);
     }
     }
 
