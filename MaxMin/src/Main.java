@@ -44,6 +44,9 @@ public class Main {
 
         GenericClass<Double> doubleFinder = new GenericClass<>(3.5, 7.2, 1.8);
         System.out.println("Additional Test Case Result: " + doubleFinder.findMaximum());
+
+        //more than 3 parameters 
+        System.out.println("finding maximum whem we have inputs 5,8,2,1,10,7 : " + MaximumFinder.findMaximum(5, 8, 2, 1, 10, 7));
     }
 }
 
