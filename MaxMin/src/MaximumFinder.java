@@ -20,6 +20,7 @@ public class MaximumFinder {
         }
         return max;
     }
+
     public static String findMaximum(String str1, String str2, String str3) {
         String max = str1;
         if (str2.compareTo(max) > 0) {
@@ -30,7 +31,19 @@ public class MaximumFinder {
         }
         return max;
     }
-}
+   //Generic Method
+   
+    public static <T extends Comparable<T>> T findMaximum(T ele1, T ele2, T ele3) {
+        T max = ele1;
+        if (ele2.compareTo(max) > 0) {
+            max = ele2;
+        }
+        if (ele3.compareTo(max) > 0) {
+            max = ele3;
+        }
+        return max;
+    }
+    }
 
 
 

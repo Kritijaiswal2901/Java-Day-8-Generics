@@ -20,6 +20,18 @@ public class Main {
         System.out.println("Test Case 1.2 Result: " + result8);
         String result9 = MaximumFinder.findMaximum("Apple", "Peach", "Banana");
         System.out.println("Test Case 1.3 Result: " + result9);
+
+        System.out.println("TC 1.1: " + MaximumFinder.findMaximum(3, 2, 1)); 
+        System.out.println("TC 1.2: " + MaximumFinder.findMaximum(1, 3, 2));
+        System.out.println("TC 1.3: " + MaximumFinder.findMaximum(1, 2, 3));
+
+        System.out.println("TC 2.1: " + MaximumFinder.findMaximum(3.0f, 2.0f, 1.0f)); 
+        System.out.println("TC 2.2: " + MaximumFinder.findMaximum(1.0f, 3.0f, 2.0f)); 
+        System.out.println("TC 2.3: " + MaximumFinder.findMaximum(1.0f, 2.0f, 3.0f)); 
+
+        System.out.println("TC 3.1: " + MaximumFinder.findMaximum("Apple", "Peach", "Banana"));
+        System.out.println("TC 3.2: " + MaximumFinder.findMaximum("Banana", "Apple", "Peach"));
+        System.out.println("TC 3.3: " + MaximumFinder.findMaximum("Peach", "Banana", "Apple"));
     }
 }
 
