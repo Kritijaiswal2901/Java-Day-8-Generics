@@ -1,3 +1,7 @@
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
 public class MaximumFinder {
     public static Integer findMaximum(Integer num1, Integer num2, Integer num3) {
         Integer max = num1;
@@ -41,6 +45,13 @@ public class MaximumFinder {
         if (ele3.compareTo(max) > 0) {
             max = ele3;
         }
+        return max;
+    }
+
+     public static <T extends Comparable<T>> T findMaximum(T... values) {
+        List<T> valueList = Arrays.asList(values);
+        Collections.sort(valueList, Collections.reverseOrder());
+        T max = valueList.get(0);
         return max;
     }
     }

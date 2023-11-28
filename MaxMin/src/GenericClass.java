@@ -1,3 +1,7 @@
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
 public class GenericClass<T extends Comparable<T>> {
     private T elem1;
     private T elem2;
@@ -12,7 +16,6 @@ public class GenericClass<T extends Comparable<T>> {
     public T findMaximum() {
         return MaximumFinder.findMaximum(elem1, elem2, elem3);
     }
-
     public static <T extends Comparable<T>> T findMaximum(T elem1, T elem2, T elem3) {
         T max = elem1;
 
@@ -26,6 +29,8 @@ public class GenericClass<T extends Comparable<T>> {
 
         return max;
     }
+
+   
 }
 
     
