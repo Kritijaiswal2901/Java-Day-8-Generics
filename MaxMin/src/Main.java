@@ -32,6 +32,18 @@ public class Main {
         System.out.println("TC 3.1: " + MaximumFinder.findMaximum("Apple", "Peach", "Banana"));
         System.out.println("TC 3.2: " + MaximumFinder.findMaximum("Banana", "Apple", "Peach"));
         System.out.println("TC 3.3: " + MaximumFinder.findMaximum("Peach", "Banana", "Apple"));
+
+        GenericClass<Integer> integerFinder = new GenericClass<>(3, 5, 8);
+        System.out.println("Test Case 1.1 Result: " + integerFinder.findMaximum());
+
+        GenericClass<Float> floatFinder = new GenericClass<>(7.0f, 15.3f, 3.8f);
+        System.out.println("Test Case 1.2 Result: " + floatFinder.findMaximum());
+
+        GenericClass<String> stringFinder = new GenericClass<>("Kriti", "jaiswal", "girl");
+        System.out.println("Test Case 1.3 Result: " + stringFinder.findMaximum());
+
+        GenericClass<Double> doubleFinder = new GenericClass<>(3.5, 7.2, 1.8);
+        System.out.println("Additional Test Case Result: " + doubleFinder.findMaximum());
     }
 }
 
