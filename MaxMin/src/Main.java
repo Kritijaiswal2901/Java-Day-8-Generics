@@ -13,7 +13,17 @@ public class Main {
         System.out.println("Test Case 2.2 Result: " + result5);
         Float result6 = MaximumFinder.findMaximum(8.7f,5.2f,10.5f);
         System.out.println("Test Case 2.3 Result: " + result6);
+
+        String result7 = MaximumFinder.findMaximum("Banana", "Peach", "Apple");
+        System.out.println("Test Case 1.1 Result: " + result7);
+        String result8 = MaximumFinder.findMaximum("Peach", "Banana", "Apple");
+        System.out.println("Test Case 1.2 Result: " + result8);
+        String result9 = MaximumFinder.findMaximum("Apple", "Peach", "Banana");
+        System.out.println("Test Case 1.3 Result: " + result9);
     }
-    }
+}
+
+    
+    
 
 
